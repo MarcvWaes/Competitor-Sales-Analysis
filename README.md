@@ -10,18 +10,18 @@
 - Performance testing
 
 # Performed DAX calculations:
-- Growth over time
+- Growth over time;
   % Growth = DIVIDE(SUM(Sales[Revenue])-([PY Sales]), ([PY Sales]))
-- Sales compared to previous year
+- Sales compared to previous year;
   PY Sales = CALCULATE(
     SUM(Sales[Revenue]),
     SAMEPERIODLASTYEAR('Date'[Date]))
-- Combine Zip & Country
+- Combine Zip & Country;
   ZipCountry = Sales[Zip] & "," & Sales[Country]
-- Manufacturer revenue based on 'manufacturer ID'
+- Manufacturer revenue based on 'manufacturer ID';
   Manufacturer Revenue = CALCULATE(
     SUM(Sales[Revenue]), Manufacturer[ManufacturerID] = 4)
-- Manufacturer market share
+- Manufacturer market share;
   Manufacturer Market Share = DIVIDE(
     Sales[Sintec Revenue], SUM(Sales[Revenue]),0)
 
