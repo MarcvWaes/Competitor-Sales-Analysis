@@ -1,4 +1,4 @@
-# Datacamp-Competitor-Sales-Analysis
+# Competitor-Sales-Analysis
 
 # Performed the following challenges:
 - Data integration
